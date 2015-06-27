@@ -69,24 +69,3 @@ Run it:
 
 The administration console should be available at http://localhost:9990.
 
-## Building on your own
-
-You don't need to do this on your own, because we prepared a trusted build for this repository, but if you really want:
-
-    docker build --rm=true --tag=jboss/wildfly .
-
-## Image internals [updated Oct 14, 2014]
-
-This image extends the [`jboss/base-jdk:7`](https://github.com/JBoss-Dockerfiles/base-jdk/tree/jdk7) image which adds the OpenJDK distribution on top of the [`jboss/base`](https://github.com/JBoss-Dockerfiles/base) image. Please refer to the README.md for selected images for more info.
-
-The server is run as the `jboss` user which has the uid/gid set to `1000`.
-
-WildFly is installed in the `/opt/jboss/wildfly` directory.
-
-## Source
-
-The source is [available on GitHub](https://github.com/JBoss-Dockerfiles/wildfly).
-
-## Issues
-
-Please report any issues or file RFEs on [GitHub](https://github.com/JBoss-Dockerfiles/wildfly/issues).
